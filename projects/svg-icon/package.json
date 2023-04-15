@@ -1,6 +1,24 @@
 {
-  "name": "svg-icon",
-  "version": "0.0.1",
+  "name": "@rahmaniali.ir/angular-svg-icon",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "svg",
+    "angular",
+    "typescript",
+    "icon",
+    "glyph"
+  ],
+  "author": {
+    "name": "Ali Rahmani",
+    "email": "alirahmani.prog@gmail.com",
+    "url": "https://rahmaniali.ir/"
+  },
+  "homepage": "https://github.com/rahmaniali-ir/angular-svg-icon",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rahmaniali-ir/angular-svg-icon"
+  },
   "peerDependencies": {
     "@angular/common": "^15.2.0",
     "@angular/core": "^15.2.0"

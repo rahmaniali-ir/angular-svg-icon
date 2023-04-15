@@ -23,6 +23,7 @@
     "ng": "ng",
     "start:demo": "ng serve svg-icon-demo -o",
     "build:npm": "ng build svg-icon",
+    "publish": "npm run build:npm && cd dist/svg-icon && npm publish --access public",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
