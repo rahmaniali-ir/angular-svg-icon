@@ -18,6 +18,11 @@
     "importHelpers": true,
     "target": "ES2022",
     "module": "ES2022",
+    "paths": {
+      "svg-icon": [
+        "dist/svg-icon"
+      ]
+    },
     "useDefineForClassFields": false,
     "lib": [
       "ES2022",
