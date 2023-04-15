@@ -1,6 +1,6 @@
 {
   "name": "@rahmaniali.ir/angular-svg-icon",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "",
   "keywords": [
     "svg",
@@ -21,7 +21,8 @@
   },
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start:demo": "ng serve svg-icon-demo -o",
+    "build:npm": "ng build svg-icon",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"

@@ -28,10 +28,7 @@
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
             "tsConfig": "projects/svg-icon/tsconfig.spec.json",
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ]
+            "polyfills": ["zone.js", "zone.js/testing"]
           }
         }
       }
@@ -53,18 +50,14 @@
             "outputPath": "dist/svg-icon-demo",
             "index": "projects/svg-icon-demo/src/index.html",
             "main": "projects/svg-icon-demo/src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "projects/svg-icon-demo/tsconfig.app.json",
             "inlineStyleLanguage": "sass",
             "assets": [
               "projects/svg-icon-demo/src/favicon.ico",
               "projects/svg-icon-demo/src/assets"
             ],
-            "styles": [
-              "projects/svg-icon-demo/src/styles.sass"
-            ],
+            "styles": ["projects/svg-icon-demo/src/styles.sass"],
             "scripts": []
           },
           "configurations": {
@@ -115,19 +108,14 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "projects/svg-icon-demo/tsconfig.spec.json",
             "inlineStyleLanguage": "sass",
             "assets": [
               "projects/svg-icon-demo/src/favicon.ico",
               "projects/svg-icon-demo/src/assets"
             ],
-            "styles": [
-              "projects/svg-icon-demo/src/styles.sass"
-            ],
+            "styles": ["projects/svg-icon-demo/src/styles.sass"],
             "scripts": []
           }
         }

@@ -1,7 +1,3 @@
-/*
- * Public API Surface of svg-icon
- */
-
-export * from './lib/svg-icon.service';
-export * from './lib/svg-icon.component';
-export * from './lib/svg-icon.module';
+export { SvgIconComponent } from './lib/svg-icon.component';
+export { SvgIconModuleConfig, IconPack } from './lib/svg-icon';
+export { SvgIconModule } from './lib/svg-icon.module';
