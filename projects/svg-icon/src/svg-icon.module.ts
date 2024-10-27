@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { SvgIconComponent } from '../public-api';
+import { SvgIconComponent } from './components/svg-icon/svg-icon.component';
 
 @NgModule({
   imports: [SvgIconComponent],

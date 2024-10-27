@@ -1,4 +1,4 @@
-export { IconPack } from './lib/types/icon-pack';
-export { IconPackService } from './lib/services/icon-pack.service';
-export { SvgIconComponent } from './lib/components/svg-icon/svg-icon.component';
-export { provideIconPack } from './lib/utils/icon-pack.utils';
+export { IconPack } from './types/icon-pack';
+export { IconPackService } from './services/icon-pack.service';
+export { SvgIconComponent } from './components/svg-icon/svg-icon.component';
+export { provideIconPack } from './utils/icon-pack.utils';

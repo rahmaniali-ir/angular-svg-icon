@@ -15,6 +15,6 @@ export class AppComponent {
   private readonly iconPack = inject(IconPackService);
 
   constructor() {
-    this.iconPack.setIcon('inj', 'ECT');
+    // this.iconPack.setIcon('', 'ECT');
   }
 }
