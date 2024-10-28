@@ -1,0 +1,12 @@
+
+.button
+  @apply flex items-center p-2 gap-2 bg-slate-100 rounded-lg transition-colors cursor-pointer
+
+  &:hover, &.active
+    @apply bg-slate-50
+
+    > svg-icon
+      @apply scale-125 opacity-100
+
+  > svg-icon
+    @apply opacity-75

@@ -1,0 +1,8 @@
+import { IconPack } from 'projects/svg-icon/src/public-api';
+
+export const iconPack: IconPack = {
+  '::gh-pages::code': `<svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M9.812 1.238a1 1 0 01.73 1.11l-.023.115-3.106 11.591a1 1 0 01-1.956-.403l.024-.114L8.587 1.946a1 1 0 011.225-.708zM4.707 4.293a1 1 0 010 1.414L2.414 8l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm6.586 0a1 1 0 011.32-.083l.094.083 3 3a1 1 0 01.083 1.32l-.083.094-3 3a1 1 0 01-1.497-1.32l.083-.094L13.586 8l-2.293-2.293a1 1 0 010-1.414z"/></svg>`,
+  '::gh-pages::package': `<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16.5 9.4l-9-5.19M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><path d="M3.27 6.96L12 12.01l8.73-5.05M12 22.08V12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>`,
+  '::gh-pages::shapes': `<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8 10l4-7 4 7H8zM10 17.5a3.5 3.5 0 11-7 0 3.5 3.5 0 017 0zM14 14h7v7h-7v-7z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
+  '::gh-pages::upload': `<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 19a4 4 0 000-8h-.023A5.5 5.5 0 106 10.514 4.287 4.287 0 006.858 19M12 19v-5m0 0l2 2m-2-2l-2 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
+};

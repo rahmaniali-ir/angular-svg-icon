@@ -1,0 +1,111 @@
+<div class="flex items-center gap-2">
+  <button
+    [class.active]="tab === 'guide'"
+    (click)="tab = 'guide'"
+    class="button"
+  >
+    <svg-icon
+      [class.text-cyan-700]="tab === 'guide'"
+      name="::gh-pages::code"
+      class="text-lg"
+    />
+    <small>Installation guide</small>
+  </button>
+
+  <button
+    [class.active]="tab === 'iconPack'"
+    (click)="tab = 'iconPack'"
+    class="button"
+  >
+    <svg-icon
+      [class.text-cyan-700]="tab === 'iconPack'"
+      name="::gh-pages::shapes"
+      class="text-lg"
+    />
+
+    <small>IconPack generator</small>
+  </button>
+</div>
+
+<div class="flex gap-3 items-start">
+  <!-- icons -->
+  <div class="flex flex-col gap-2 mx-auto flex-1">
+    <strong>Icons</strong>
+
+    <div class="flex relative gap-3 flex-wrap">
+      @for(icon of icons; track icon) {
+      <div
+        [title]="icon"
+        [class.active]="selectedIcon === icon"
+        [class.border-cyan-600]="selectedIcon === icon"
+        (click)="selectIcon(icon)"
+        class="button group gap-3 animate-come-up justify-center border-2"
+      >
+        <svg-icon
+          [name]="icon"
+          class="animate-appear text-3xl group-hover:scale-125"
+        />
+      </div>
+      } @empty {
+      <div class="flex text-xs">
+        <small>Empty pack!</small>
+      </div>
+      }
+    </div>
+
+    <div
+      class="flex sticky bottom-0 backdrop-blur-lg p-1 bg-slate-50/25 border-2 border-cyan-500/15 rounded-lg w-full"
+    >
+      <label
+        (dragover)="$event.preventDefault()"
+        (drop)="$event.preventDefault()"
+        class="button group justify-center gap-3 !bg-cyan-500/10 hover:!bg-cyan-500/15 p-2 w-full border-2 border-dashed border-cyan-600/25"
+      >
+        <input
+          multiple
+          (input)="onFileInput($event)"
+          type="file"
+          accept=".svg"
+          class="absolute h-0 w-0 opacity-0"
+        />
+
+        <div
+          class="p-2 flex items-center justify-center text-cyan-500 group-hover:text-cyan-600"
+        >
+          <svg-icon
+            name="::gh-pages::upload"
+            class="animate-appear text-4xl group-hover:scale-125"
+          />
+        </div>
+
+        <div
+          class="text-xs items-center gap-2 flex overflow-ellipsis text-nowrap overflow-hidden text-cyan-900 group-hover:text-cyan-950 max-w-full"
+        >
+          <span>Select Files</span>
+          <span class="opacity-50">or</span>
+          <span>Drop Here</span>
+        </div>
+      </label>
+    </div>
+  </div>
+
+  <!-- inspector -->
+  <div class="flex flex-col sticky top-0 bg-slate-100 rounded-lg p-3 gap-3">
+    <div class="flex items-center gap-3">
+      <div class="flex items-center px-1 text-2xl">
+        @if(selectedIcon) { @for(icon of [selectedIcon]; track icon) {
+        <svg-icon [name]="icon" class="animate-appear" />
+        } } @else {
+        <svg-icon name="::gh-pages::package" class="animate-appear" />
+        }
+      </div>
+
+      <input
+        [value]="selectedIcon ?? 'IconPack'"
+        type="text"
+        placeholder="IconPack Name"
+        class="text-box"
+      />
+    </div>
+  </div>
+</div>

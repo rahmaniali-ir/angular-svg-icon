@@ -11,7 +11,6 @@ import { IconPackService } from '../../services/icon-pack.service';
 @Component({
   selector: 'svg-icon',
   standalone: true,
-  imports: [],
   template: '<i [innerHTML]="_svg"></i>',
   styleUrls: ['./svg-icon.component.sass'],
   encapsulation: ViewEncapsulation.None,
