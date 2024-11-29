@@ -1,3 +1,31 @@
 
 :host
-  @apply flex flex-col gap-4 p-4 items-stretch
+  @apply grid place-items-center gap-4 p-4 h-screen
+
+input.color-input
+  @apply flex h-6 w-6 rounded-full border-0
+  -webkit-appearance: none
+
+  &::-webkit-color-swatch-wrapper
+    padding: 0
+
+a
+  &:hover
+    svg-icon
+      @apply opacity-75 scale-125
+
+    > span
+      @apply opacity-50
+  
+  &.active
+    svg-icon
+      @apply scale-150 animate-rainbow opacity-100
+
+    > span
+      @apply opacity-75 font-black
+
+  svg-icon
+    @apply text-lg opacity-50 text-slate-900
+
+  > span
+      @apply opacity-25

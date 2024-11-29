@@ -1,0 +1,12 @@
+<div class="flex items-center justify-center">
+  <svg-icon
+    [name]="icon()"
+    class="animate-appear text-3xl group-hover:scale-125"
+  />
+</div>
+
+@if(isListView) {
+<div class="flex items-center">
+  <span>{{ icon() }}</span>
+</div>
+}

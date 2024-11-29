@@ -1,4 +1,6 @@
-# SvgIcon
+# Angular SVG Icon
+
+The Angular SVG Icon Library helps developers easily integrate SVG icons into their Angular projects.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
 
