@@ -5,8 +5,31 @@
   their Angular projects.
 </p>
 
-<ol>
-  <li>Install npm package</li>
-  <li>Import icons</li>
-  <li>Use icon anywhere!</li>
+<ol class="flex flex-col gap-4">
+  <li class="flex flex-col">
+    <strong>1. Install the package via npm</strong>
+
+    <code-block>
+      <code>
+        npm install
+        <span class="animate-rainbow">&#64;rahmaniali.ir/agnular-svg-icon</span>
+      </code>
+    </code-block>
+  </li>
+
+  <li class="flex flex-col">
+    <strong>2. Provide your icons in your</strong>
+
+    <code-block>
+      <pre [innerHTML]="provideIconsCode"></pre>
+    </code-block>
+  </li>
+
+  <li class="flex flex-col">
+    <strong>3. Use it in your component</strong>
+
+    <code-block>
+      <pre [innerHTML]="useIconCode"></pre>
+    </code-block>
+  </li>
 </ol>

@@ -1,48 +1,24 @@
-<div
-  class="flex flex-col gap-3 items-start rounded-lg border-2 border-slate-300"
->
+<div class="frame">
   <div class="flex flex-col w-full p-4">
     <router-outlet />
   </div>
 
   <div
-    class="flex items-center gap-6 p-4 bg-slate-50 w-full justify-around rounded-es-lg rounded-ee-lg border-t-2 border-slate-200 shadow-lg shadow-slate-300"
+    class="flex items-center sticky bottom-0 gap-6 p-4 bg-neutral-50/75 backdrop-blur-sm w-full justify-around rounded-es-lg rounded-ee-lg border-t-4 border-slate-100 shadow-lg shadow-slate-300"
   >
+    @for(link of links; track link.name) {
     <a
       [routerLinkActiveOptions]="{ exact: true }"
-      routerLink="/"
+      [routerLink]="link.route"
       routerLinkActive="active"
       class="flex flex-col items-center gap-2"
     >
-      <svg-icon name="::gh-pages::shapes" class="animate-rainbow" />
-      <span class="text-xs opacity-50">Introduction</span>
+      <svg-icon
+        [name]="link.icon"
+        [class.animate-rainbow]="link.name === 'introduction'"
+      />
+      <span class="text-xs opacity-50">{{ link.title }}</span>
     </a>
-
-    <a
-      routerLink="/documentation"
-      routerLinkActive="active"
-      class="flex flex-col items-center gap-2"
-    >
-      <svg-icon name="::gh-pages::code" />
-      <span class="text-xs opacity-50">Documentation</span>
-    </a>
-
-    <a
-      routerLink="/generation"
-      routerLinkActive="active"
-      class="flex flex-col items-center gap-2"
-    >
-      <svg-icon name="::gh-pages::package" />
-      <span class="text-xs opacity-50">Generation</span>
-    </a>
-
-    <a
-      routerLink="/contribution"
-      routerLinkActive="active"
-      class="flex flex-col items-center gap-2"
-    >
-      <svg-icon name="::gh-pages::github" />
-      <span class="text-xs opacity-50">Contribution</span>
-    </a>
+    }
   </div>
 </div>

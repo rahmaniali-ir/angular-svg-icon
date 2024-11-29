@@ -1,8 +1,5 @@
-import { Component, inject } from '@angular/core';
-import {
-  IconPackService,
-  SvgIconComponent,
-} from 'projects/svg-icon/src/public-api';
+import { Component } from '@angular/core';
+import { SvgIconComponent } from 'projects/svg-icon/src/public-api';
 
 @Component({
   selector: 'app-root',
@@ -11,10 +8,4 @@ import {
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.sass'],
 })
-export class AppComponent {
-  private readonly iconPack = inject(IconPackService);
-
-  constructor() {
-    // this.iconPack.setIcon('', 'ECT');
-  }
-}
+export class AppComponent {}

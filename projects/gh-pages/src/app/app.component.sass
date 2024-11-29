@@ -2,6 +2,10 @@
 :host
   @apply grid place-items-center gap-4 p-4 h-screen
 
+.frame
+  @apply flex flex-col gap-3 items-start rounded-lg border-4 border-slate-300
+  width: clamp(300px, 60vw, 1024px)
+
 input.color-input
   @apply flex h-6 w-6 rounded-full border-0
   -webkit-appearance: none
